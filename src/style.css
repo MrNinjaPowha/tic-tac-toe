@@ -1,0 +1,58 @@
+.game-wrapper {
+  max-width: 30rem;
+}
+
+.message {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 1rem;
+}
+
+.message-value {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  aspect-ratio: 1;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background-color: hsl(20, 50%, 25%);
+}
+
+.slot {
+  border: none;
+  box-shadow: 0 0 1rem 0 hsl(0, 0%, 0%, 0.5) inset;
+  background-color: hsl(20, 50%, 20%);
+}
+
+.slot:is(:hover, :focus-visible):not([placed='true']) {
+  background-color: hsl(20, 50%, 22%);
+}
+
+.slot:active:not([placed='true']) {
+  background-color: hsl(20, 50%, 25%);
+}
+
+.slot[placed='true'] {
+  cursor: default;
+  border: none;
+}
+
+.piece {
+  padding: 10%;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.disabled {
+  display: none;
+}
+
+.max-content {
+  max-width: max-content;
+}
