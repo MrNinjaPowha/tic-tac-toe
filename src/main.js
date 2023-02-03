@@ -116,7 +116,6 @@ function loadGame(newGame, id) {
     }
 
     const index = Math.round(Math.random() * (availableSlots.length - 1));
-    console.log(availableSlots, index, newGame.playerSlots);
     currentGame.pickPlayer(availableSlots[index]);
   }
 
