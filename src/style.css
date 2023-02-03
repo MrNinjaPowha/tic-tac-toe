@@ -19,21 +19,22 @@
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 1rem;
   padding: 1rem;
-  background-color: hsl(20, 50%, 25%);
+  background: no-repeat url(./img/wood-texture.jpg);
+  background-size: cover;
 }
 
 .slot {
   border: none;
   box-shadow: 0 0 1rem 0 hsl(0, 0%, 0%, 0.5) inset;
-  background-color: hsl(20, 50%, 20%);
+  background-color: hsl(0, 0%, 0%, 0.25);
 }
 
 .slot:is(:hover, :focus-visible):not([placed='true']) {
-  background-color: hsl(20, 50%, 22%);
+  background-color: hsl(0, 0%, 0%, 0.1);
 }
 
 .slot:active:not([placed='true']) {
-  background-color: hsl(20, 50%, 25%);
+  background-color: hsl(0, 0%, 0%, 0);
 }
 
 .slot[placed='true'] {
